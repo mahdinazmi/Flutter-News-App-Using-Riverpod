@@ -12,7 +12,7 @@ class NewsService {
 
   fetchNews() async {
 
-    var response = await _dio.get('v2/top-headlines?sources=techcrunch&apiKey=094abddfda1944fb87d868677f3005ee');
+    var response = await _dio.get('v2/top-headlines?country=us&apiKey=094abddfda1944fb87d868677f3005ee');
 
     return response.data;
 
